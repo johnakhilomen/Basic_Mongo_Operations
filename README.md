@@ -11,12 +11,28 @@ use moviedb
 mongoimport --db moviedb --collection movies --file /Users/user1/Downloads/json_data-main/movies.json
 mongoimport --db moviedb --collection users --file /Users/user1/Downloads/json_data-main/users.json
 ```
-# Get data from collection
+# Get all
 ```python
 db.movies.find();
+```
+
+# Get one
+```python
+db.users.findOne({Username: "jondoe2"});
 ```
 
 # Drop collection:
 ```python
 db.movies.drop()
 ```
+
+# Update collection
+```python
+db.users.update({Username: "jondoe2"}, {$set: {Email: "newjondoe2@email.comdb.users.update({Username: "jondoe2"}, {$set: {Email: "newjondoe2@email.com", Password: "newpasscode1"} } )
+```
+
+# Delete one
+```python
+db.users.remove({Username: "jondoe2"});
+```
+
