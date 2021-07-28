@@ -36,3 +36,7 @@ db.users.update({Username: "jondoe2"}, {$set: {Email: "newjondoe2@email.comdb.us
 db.users.remove({Username: "jondoe2"});
 ```
 
+# Get sub object
+```python
+db.movies.find({"Genre.Name": "Thriller"})
+```
