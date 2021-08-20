@@ -41,6 +41,6 @@ db.users.remove({Username: "jondoe2"});
 db.movies.find({"Genre.Name": "Thriller"})
 ```
 ## Mongo import for remote db
-```
+```python
 mongoimport --uri mongodb+srv://readnwriteuser:passw0rd@cluster0.plvbm.mongodb.net/myFirstDatabase --collection movies --file /Users/johnakhilomen/Downloads/json_data-main/movies.json --type json
 ```
