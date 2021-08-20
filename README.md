@@ -42,5 +42,5 @@ db.movies.find({"Genre.Name": "Thriller"})
 ```
 ## Mongo import for remote db
 ```
-mongoimport --uri mongodb+srv://readnwriteuser:passw0rd@cluster0.plvbm.mongodb.net/myFirstDatabase --collection movies --file /Users/user1/Downloads/json_data-main/movies.json --type json
+mongoimport --uri mongodb+srv://readnwriteuser:passw0rd@cluster0.plvbm.mongodb.net/myFirstDatabase --collection movies --file /Users/johnakhilomen/Downloads/json_data-main/movies.json --type json
 ```
