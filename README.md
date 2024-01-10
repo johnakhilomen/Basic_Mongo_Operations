@@ -44,3 +44,8 @@ db.movies.find({"Genre.Name": "Thriller"})
 ```python
 mongoimport --uri mongodb+srv://readnwriteuser:your_password@cluster0.plvbm.mongodb.net/myFirstDatabase --collection movies --file /Users/johnakhilomen/Downloads/json_data-main/movies.json --type json
 ```
+
+## Mongo Export to json file
+```python
+mongoexport --uri mongodb://localhost:27017/myFlixdb --collection movies --type json -o db.json
+```
