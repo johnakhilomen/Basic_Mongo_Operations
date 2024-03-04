@@ -28,7 +28,7 @@ db.movies.drop()
 
 # Update collection
 ```python
-db.users.update({Username: "jondoe2"}, {$set: {Email: "newjondoe2@email.comdb.users.update({Username: "jondoe2"}, {$set: {Email: "newjondoe2@email.com", Password: "newpasscode1"} } )
+db.users.updateOne({Username: "jondoe2"}, {$set: {Email: "newjondoe2@email.com", Password: "newpasscode1"} } )
 ```
 
 # Delete one
